@@ -1,12 +1,11 @@
 {
-"name": "kinetic-platform",
+ "name": "kinetic-platform",
   "private": true,
   "version": "1.0.0",
   "type": "module",
   "scripts": {
     "dev": "tsx --env-file=.env index.ts",
-    "start": "tsx index.ts",
-    "build": "tsc --noEmit"
+    "start": "tsx index.ts"
   },
   "dependencies": {
     "@google/genai": "^2.4.0",
