@@ -1,17 +1,12 @@
 {
-  "name": "kinetic-platform",
+"name": "kinetic-platform",
   "private": true,
   "version": "1.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite --port=3000 --host=0.0.0.0",
-    "server": "tsx --env-file=.env server/index.ts",
-    "dev:all": "concurrently \"npm run dev\" \"npm run server\"",
-    "build": "vite build",
-    "preview": "vite preview",
-    "clean": "rm -rf dist",
-    "lint": "tsc --noEmit",
-    "typecheck:server": "tsc --project tsconfig.server.json --noEmit"
+    "dev": "tsx --env-file=.env index.ts",
+    "start": "tsx index.ts",
+    "build": "tsc --noEmit"
   },
   "dependencies": {
     "@google/genai": "^2.4.0",
